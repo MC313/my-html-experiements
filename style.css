@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  transition: all 0.5s;
+}
+
+main#content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 90%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#container-1, #container-2,
+#container-3, #container-4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* section 1 contents */
+#overlay-1 {
+  background: #003366;
+  color: #E7EBF0;
+  opacity: 0;
+  -webkit-clip-path: inset(0% 50% 60% 0%);
+  clip-path: inset(0% 50% 60% 0%);
+}
+
+#overlay-1:hover {
+  z-index: 10;
+  opacity: 1;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+}
+
+#container-1 {
+  background: #003366;
+  color: #E7EBF0;
+}
+
+
+/* section 2 contents */
+#overlay-2 {
+  background: #E7EBF0;
+  color: #003366;
+  opacity: 0;
+  -webkit-clip-path: inset(45% 50% 0% 0%);
+  clip-path: inset(45% 50% 0% 0%);
+}
+
+#overlay-2:hover {
+  z-index: 10;
+  opacity: 1;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+}
+
+#container-2 {
+  background: #E7EBF0;
+  color: #003366;
+}
+
+
+/* section 3 contents */
+#overlay-3 {
+  background: #B1BDCD;
+  color: #5B7290;
+  opacity: 0;
+  -webkit-clip-path: inset(0% 0% 55% 50%);
+  clip-path: inset(0% 0% 55% 50%);
+}
+
+#overlay-3:hover {
+  z-index: 10;
+  opacity: 1;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+}
+
+#container-3 {
+  background: #B1BDCD;
+  color: #5B7290;
+}
+
+
+/* section 4 contents */
+#overlay-4 {
+  background: #5B7290;
+  color: #B1BDCD;
+  opacity: 0;
+  -webkit-clip-path: inset(45% 0% 0% 50%);
+  clip-path: inset(45% 0% 0% 50%);
+}
+
+#overlay-4:hover {
+  z-index: 10;
+  opacity: 1;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+}
+
+#container-4 {
+  background-color: #5B7290;
+  color: #B1BDCD;
+}
+
+.click-me {
+  font-size: 5vh;
+}
+
+.close-me {
+  display: block;
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: red;
+}
+
+footer {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: mediumpurple;
+  color: #ffffff;
+}
+
+/*======================*/
+/*||   MEDIA QUERIES  ||*/
+/*======================*/
+
+@media only screen and (min-width: 768px) {
+    #container-1, #container-2,
+    #container-3, #container-4 {
+      -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+    }
+}

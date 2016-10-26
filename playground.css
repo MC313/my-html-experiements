@@ -1,0 +1,150 @@
+ 
+
+
+
+
+ $(document).ready(function(){
+
+    /*(if (typeof jQuery != "undefined") {
+
+      alert('jQuery is installed!');
+
+       } else {
+        
+        alert('jQuery is not installed!');
+
+    }*/
+    //get width and height of splash screen before resizing
+    var coverWidth = $("#container-1").outerWidth();
+    var coverHeight = $("container-1").outerHeight();
+
+    //get width and height of splash screen before resizing
+    var splashWidth = $("#splash-container").outerWidth();
+    var splashHeight = $("#splash-container").outerHeight();
+
+    //mouse over function for first arrow icon
+    $("#line-1").click(function() {
+        $("#splash-container").animate( { width: coverWidth, height: coverHeight } )
+        $(this).fadeOut(400)
+        $("#splash-container").fadeOut(500)
+    });
+
+    $("#line-2").click(function() {
+        $("#splash-container").fadeIn(700)
+        $("#splash-container").animate( { width: splashWidth, height: splashHeight } )
+        $("#line-1").fadeIn(4500)
+    });
+
+ }); 
+
+ When I met her she was out for love
+Yeah, I bought her leather and some diamond studs
+Damn, when I met her she was molly'd up
+Fuck it, I said "Whatever" cause I'm not a judge
+No, all my niggas say she's not what's up
+Uh, I considered it but not enough
+Uh, she just wanted to be popular
+Uh, she just want ten thousand followers
+Lord, she posted, she posted, she posted
+They like it, they like it, repost it
+She party promoting, she hosting
+She posing, legs open, provoking
+It got my head smoking
+I tried to act like I don't notice
+Emotions, emotions, emotions, lord
+
+[Hook: Charlie Puth (Lil Wayne)]
+I'm facing the bottle for all of my problems
+These Instagram models are nothing but trouble
+She's going away now (Now it's over)
+I'm going full throttle (You drive me crazy)
+All these Instagram models
+I said they're nothing but trouble
+
+[Verse 2: Lil Wayne]
+I had to leave that ho alone and get my mind right
+I had to go talk to my friends, I had to find Christ
+Lord I had to, open up my eyes and find light
+I was so green and all she wanted was that limelight
+Lord I, was so blinded by her highlights
+She had me not checking my DM's neither my likes
+Oh what, you modeling ma? Knock yourself out
+Open my heart to you when you lock yourself out
+When I met her she was posse'd up
+In the section holding bottles up
+Oh, she just wanted to be popular
+Oh, she just wanted ten thousand followers
+
+[Bridge : Charlie Puth]
+I should have known from the very start
+That you weren't after my foolish heart
+No, you liar, liar, liar girl
+You got the world thinking you're a star
+But you, you're not who you say you are
+I'm dying, dying, dying, girl
+
+[Hook: Charlie Puth (Lil Wayne)]
+I'm facing the bottle
+(I'm sipping and lighted and dipping in line, but I'm coping)
+For all of my problems (I'm too open)
+These Instagram models (Glad I left her)
+Are nothing but trouble (But I don't know her Lord)
+She's going away now (Now it's over)
+I'm going full throttle (You drive me crazy)
+All these Instagram models
+I said they're nothing but trouble
+
+ 
+Reply…
+
+
+ 
+#about-overlay:target {
+  display: flex;
+  flex-basis: 100%;
+  opacity: 1;
+}
+
+.open-overlay {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  background-color: #000;
+}
+
+<div class="flex-item">
+    <img class="svg-images" src="assets/css3-plain-wordmark.svg">
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/html5-plain-wordmark.svg">
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/bootstrap-plain-wordmark.svg">         
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/sass-original.svg">
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/git-plain-wordmark.svg">
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/java-plain-wordmark.svg">
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/mysql-plain-wordmark.svg">
+</div>
+<div class="flex-item">
+    <img class="svg-images" src="assets/rails-plain-wordmark.svg">
+</div> 
+
+/*container that holds skills icons*/
+/*.flex-item {
+  width: 25%;
+  padding: 5px 0px;
+}
+
+skills icons
+.svg-images {
+  height: 85px;
+  width: 85px;
+}*/
