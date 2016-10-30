@@ -28,13 +28,6 @@ main#content-container {
   height: 90%;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
 #container-1, #container-2, #container-3, #container-4 {
   -ms-flex: 1 1 auto;
   -webkit-box-flex: 1;
@@ -52,14 +45,6 @@ main#content-container {
 }
 
 /* section 1 contents */
-#overlay-1 {
-  background: #003366;
-  color: #E7EBF0;
-  opacity: 0;
-  -webkit-clip-path: inset(0% 50% 60% 0%);
-  clip-path: inset(0% 50% 60% 0%);
-}
-
 #container-1 {
   background: #003366;
   color: #E7EBF0;
@@ -67,21 +52,6 @@ main#content-container {
 
 
 /* section 2 contents */
-#overlay-2 {
-  background: #E7EBF0;
-  color: #003366;
-  opacity: 0;
-  -webkit-clip-path: inset(45% 50% 0% 0%);
-  clip-path: inset(45% 50% 0% 0%);
-  display: none;
-}
-
-#overlay-2:hovers {
-  z-index: 10;
-  opacity: 1;
-  -webkit-clip-path: inset(0% 0% 0% 0%);
-}
-
 #container-2 {
   background: #E7EBF0;
   color: #003366;
@@ -89,15 +59,6 @@ main#content-container {
 
 
 /* section 3 contents */
-#overlay-3 {
-  background: #B1BDCD;
-  color: #5B7290;
-  opacity: 0;
-  -webkit-clip-path: inset(0% 0% 55% 50%);
-  clip-path: inset(0% 0% 55% 50%);
-  display: none;
-}
-
 #container-3 {
   background: #B1BDCD;
   color: #5B7290;
@@ -105,15 +66,6 @@ main#content-container {
 
 
 /* section 4 contents */
-#overlay-4 {
-  background: #5B7290;
-  color: #B1BDCD;
-  opacity: 0;
-  -webkit-clip-path: inset(45% 0% 0% 50%);
-  clip-path: inset(45% 0% 0% 50%);
-  display: none;
-}
-
 #container-4 {
   background-color: #5B7290;
   color: #B1BDCD;
@@ -121,39 +73,6 @@ main#content-container {
 
 .click-me {
   font-size: 5vh;
-}
-
-.close-icon {
-  display: block;
-  float: right;
-  overflow: hidden;
-  width: 60px;
-  height: 60px;
-  background: red;
-}
-
-.close-icon:hover {
-  cursor: pointer;
-}
-
-.close-line {
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  width: 100%;
-}
-
-.close-line-1 {
-  margin-top: 50%;
-}
-
-.close-line-1 {
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-}
-
-.close-line-2 {
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
 }
 
 footer {
