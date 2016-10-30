@@ -1,8 +1,3 @@
-
-
-
-
-
 $(document).ready(function () {
 
     /*(if (typeof jQuery != "undefined") {
@@ -34,36 +29,23 @@ $(document).ready(function () {
                 opacity: 1,
                 '-webkit-clip-path': 'inset(0% 0% 0% 0%)'
             })
-        });
+        })
 
-        $(closeIconValue).click(function () {
-            var x = $(overlayElement).css({
+        $(closeIconValue).hover(function () {
+            $(overlayElement).css({
+                'z-index': '',
+                opacity: '',
                 '-webkit-clip-path': initialClipPathValue
             });
+            console.log("INITIAL CLIP PATH VALUE " + initialClipPathValue)
             console.log($(overlayElement).css('-webkit-clip-path'));
         });
     };
-
-    // closeOverlay = function (closeIconValue, overlaySelected, initialClipPathValue) {
-    //     $(closeIconValue).click(function () {
-    //         console.log(initialClipPathValue);
-    //         console.log(overlaySelected)
-    //         var x = $(overlaySelected).css({ '-webkit-clip-path': 'inset(0% 0% 55% 50%)' });
-    //         console.log($(x).css('-webkit-clip-path'));
-    //     });
-    // };
 
     openCloseOverlay(closeIcon[0], overlay1, a);
     openCloseOverlay(closeIcon[1], overlay2, b);
     openCloseOverlay(closeIcon[2], overlay3, c);
     openCloseOverlay(closeIcon[3], overlay4, d);
-
-    // closeOverlay(closeIcon[0], overlay1, a);
-    // closeOverlay(closeIcon[1], overlay2, b);
-    // closeOverlay(closeIcon[2], overlay3, c);
-    // closeOverlay(closeIcon[3], overlay4, d);
-
-
 });
 
 

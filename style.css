@@ -11,6 +11,7 @@ body {
 }
 
 * {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -34,10 +35,9 @@ main#content-container {
   z-index: 2;
 }
 
-#container-1, #container-2,
-#container-3, #container-4 {
-  -webkit-flex: 1 1 auto;
+#container-1, #container-2, #container-3, #container-4 {
   -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
   flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,12 +60,6 @@ main#content-container {
   clip-path: inset(0% 50% 60% 0%);
 }
 
-#overlay-1:hovers {
-  z-index: 10;
-  opacity: 1;
-  -webkit-clip-path: inset(0% 0% 0% 0%);
-}
-
 #container-1 {
   background: #003366;
   color: #E7EBF0;
@@ -79,6 +73,7 @@ main#content-container {
   opacity: 0;
   -webkit-clip-path: inset(45% 50% 0% 0%);
   clip-path: inset(45% 50% 0% 0%);
+  display: none;
 }
 
 #overlay-2:hovers {
@@ -100,12 +95,7 @@ main#content-container {
   opacity: 0;
   -webkit-clip-path: inset(0% 0% 55% 50%);
   clip-path: inset(0% 0% 55% 50%);
-}
-
-#overlay-3:hovers {
-  z-index: 10;
-  opacity: 1;
-  -webkit-clip-path: inset(0% 0% 0% 0%);
+  display: none;
 }
 
 #container-3 {
@@ -121,12 +111,7 @@ main#content-container {
   opacity: 0;
   -webkit-clip-path: inset(45% 0% 0% 50%);
   clip-path: inset(45% 0% 0% 50%);
-}
-
-#overlay-4:hovers {
-  z-index: 10;
-  opacity: 1;
-  -webkit-clip-path: inset(0% 0% 0% 0%);
+  display: none;
 }
 
 #container-4 {
@@ -147,6 +132,10 @@ main#content-container {
   background: red;
 }
 
+.close-icon:hover {
+  cursor: pointer;
+}
+
 .close-line {
   background: #ffffff;
   border: 1px solid #ffffff;
@@ -158,18 +147,26 @@ main#content-container {
 }
 
 .close-line-1 {
-  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 .close-line-2 {
-  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
 }
 
 footer {
   height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: mediumpurple;
   color: #ffffff;
 }
@@ -181,8 +178,8 @@ footer {
 @media only screen and (min-width: 768px) {
     #container-1, #container-2,
     #container-3, #container-4 {
-      -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
-      flex: 1 1 50%;
+      -webkit-box-flex: 1;
+              flex: 1 1 50%;
     }
 }
