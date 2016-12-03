@@ -73,13 +73,6 @@ main#content-container {
   opacity: 0;
   -webkit-clip-path: inset(45% 50% 0% 0%);
   clip-path: inset(45% 50% 0% 0%);
-  display: none;
-}
-
-#overlay-2:hovers {
-  z-index: 10;
-  opacity: 1;
-  -webkit-clip-path: inset(0% 0% 0% 0%);
 }
 
 #container-2 {
@@ -95,7 +88,6 @@ main#content-container {
   opacity: 0;
   -webkit-clip-path: inset(0% 0% 55% 50%);
   clip-path: inset(0% 0% 55% 50%);
-  display: none;
 }
 
 #container-3 {
@@ -111,7 +103,6 @@ main#content-container {
   opacity: 0;
   -webkit-clip-path: inset(45% 0% 0% 50%);
   clip-path: inset(45% 0% 0% 50%);
-  display: none;
 }
 
 #container-4 {
