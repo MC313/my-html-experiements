@@ -46,7 +46,11 @@ q:before, q:after, blockquote:before, blockquote:after {
   content: none;
 }
 
-a img {
+a {
+  color: inherit;
+}
+
+a, a img {
   border: none;
   text-decoration: none;
 }
